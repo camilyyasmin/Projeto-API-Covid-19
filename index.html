@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto API COVID-19</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+</head>
+<body>
+     <!--cabeçalho do site-->
+   <header >
+    <img id="logo" src="img/img.covd.png">
+    <div >Projeto<br/>API COVID-19</div>
+   </header>
+
+    <!-- Menu de navegação do site-->
+    <nav>
+        <a href="index.html">Página Inicial </a>
+        <a href="sobre.html">Sobre </a>
+        <a href="equipe.html">Equipe</a>
+    </nav>
+
+    <div id="div-dados">
+        <div id="borda">Covid-19 pelo mundo</div>
+        <div id="grafico-mapa" class="area-grafico"></div>
+    </div>
+
+    <div id="div-dados-pizza">
+        <div id="borda-pizza">Covid-19 pelo mundo - Status</div>
+        <div id="grafico-pizza" class="area-grafico"></div>
+    </div>
+
+    <div id="div-dados-tabela">
+        <div id="borda-tabela">Covid-19 no Brasil</div>
+         <div id="tabela-dados" class="area-grafico">
+            <div id="dados">
+                <table id="tabela-dados2">
+                    <thead>
+                        <tr>
+                            <th>Sigla</th>
+                            <th>Estado</th>
+                            <th>Casos</th>
+                            <th>Mortes</th>
+                            <th>Suspeitos</th>
+                            <th>Descartados</th>
+                        </tr>
+                    </thead>
+                    <tbody id="linhas">
+                    </tbody>
+                </table>
+            </div>
+         </div>
+    </div>
+    <footer> 
+        Desenvolvido por: CJR COVID &copy;
+    </footer>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="js/grafico-mapa.js"></script>
+<script src="js/grafico-pizza.js"></script>
+<script src="js/tabela-dados.js"></script>
+</html>
